@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 First, run the development server:
@@ -14,23 +12,41 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Laporan Praktikum - 06
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+|       | Pemrograman Berbasis Framework 2024 |
+| ----- | ----------------------------------- |
+| NIM   | 2141720222                          |
+| Nama  | Diwa Arsyad Atthoriq                |
+| Kelas | TI - 3A                             |
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Praktikum 1
 
-## Learn More
+# Soal 1
 
-To learn more about Next.js, take a look at the following resources:
+Capture hasil deploy project Anda dan buatlah laporan di file README.md. Jelaskan apa yang telah Anda pelajari?
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Jangan lupa push dengan pesan commit: "W09: Jawaban soal 1".
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# Jawab
 
-## Deploy on Vercel
+Integrasi dengan Vercel dan GitHub:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Continuous Deployment: Mengatur integrasi antara GitHub dan Vercel untuk memastikan bahwa setiap perubahan yang dilakukan pada repository otomatis diterapkan ke deployment di Vercel.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Deployment Pipelines: Memahami bagaimana pipeline deployment bekerja di Vercel dan bagaimana proses build dan deploy dilakukan.
+
+# Soal 2
+
+Capture hasil basis data Anda dan buatlah laporan di file README.md. Jelaskan apa yang telah Anda pelajari?
+
+Jangan lupa push dengan pesan commit: "W09: Jawaban soal 2".
+
+# Jawab
+
+Konfigurasi dan Pengaturan Database:
+
+Pilihan Database: Memilih jenis database yang tepat untuk proyek Anda (misalnya, PostgreSQL, MySQL, MongoDB).
+Koneksi ke Database: Mempelajari cara mengatur dan mengkonfigurasi koneksi ke database dari aplikasi Anda yang di-host di Vercel.
+
+Environment Variables: Mengelola environment variables untuk menyimpan informasi sensitif seperti kredensial database dengan aman.
