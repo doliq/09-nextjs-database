@@ -24,6 +24,8 @@ bun dev
 
 # Soal 1
 
+![Screenshoot](assets-report/01.png)
+
 Capture hasil deploy project Saya dan buatlah laporan di file README.md. Jelaskan apa yang telah Saya pelajari?
 
 Jangan lupa push dengan pesan commit: "W09: Jawaban soal 1".
@@ -44,6 +46,8 @@ Jangan lupa push dengan pesan commit: "W09: Jawaban soal 2".
 
 # Jawab
 
+![Screenshoot](assets-report/02.png)
+
 Konfigurasi dan Pengaturan Database:
 
 Pilihan Database: Memilih jenis database yang tepat untuk proyek Saya (misalnya, PostgreSQL, MySQL, MongoDB).
@@ -56,6 +60,10 @@ Environment Variables: Mengelola environment variables untuk menyimpan informasi
 Capture hasil npm run seed Saya dan buatlah laporan di file README.md. Jelaskan apa yang telah Saya pelajari ?
 
 Jangan lupa push dengan pesan commit: "W09: Jawaban soal 3".
+
+# Jawab
+
+![Screenshoot](assets-report/03.png)
 
 Penulisan dan Pelaksanaan Skrip Seeder:
 
@@ -76,6 +84,63 @@ Jangan lupa push dengan pesan commit: "W09: Jawaban soal 4".
 
 # Jawab
 
+![Screenshoot](assets-report/04.png)
+
 Implementasi query pada vercel dan menyesuaikan data dengan seed pada seed.js
 
-https://09-nextjs-database-dc3d1i3ay-diwa-oliqs-projects.vercel.app/
+## Soal 5
+
+Lakukan push, kemudian perhatikan di akun dashboard Vercel project Anda. Capture dan lampirkan link aplikasi Anda yang telah berhasil di deploy, kemudian buatlah laporan di file README.md. Jelaskan apa yang telah Anda pelajari ?
+
+Jangan lupa push dengan pesan commit: "W09: Jawaban soal 5".
+
+## Jawab
+
+Cara bagaimana melakukan deployment aplikasi ke Vercel menggunakan GitHub dan bagaimana menyusun struktur folder.
+
+dashboard Vercel untuk melihat proses deploy dan mengambil link aplikasi yang telah berhasil di-deploy.
+
+Penerapan langkah-langkah di atas pada Vercel membantu memahami bagaimana workflow deployment berlangsung
+
+![Screenshoot](assets-report/05.png)
+
+## Soal 6
+
+Lakukan capture dan push hasilnya, kemudian buatlah laporan di file README.md. Jelaskan apa yang telah Anda pelajari ?
+
+Jangan lupa push dengan pesan commit: "W09: Jawaban soal 6".
+
+Cara menampilkan revenue chart
+
+![Screenshoot](assets-report/06.png)
+
+## Soal 7
+
+Lakukan capture dan push hasilnya, kemudian buatlah laporan di file README.md. Jelaskan apa yang telah Anda pelajari ?
+
+Jangan lupa push dengan pesan commit: "W09: Jawaban soal 7".
+
+## Jawab
+
+Cara menampilkan latest invoice dan penambahan gambar lokal agar aset gambar yang kosong diisi
+
+![Screenshoot](assets-report/07.png)
+
+## Tugas Praktikum
+
+## 6. Tugas Praktikum
+
+1. Jika Anda perhatikan pada file src\app\page.tsx untuk komponen Card sebenarnya telah dibuat sebagai molecules pada file src\app\components\molecules\card.tsx yaitu komponen CardWrapper. Silakan Anda sesuaikan sehingga dapat tampil seperti gambar berikut.
+   ![Screenshoot](assets-report/09.png)
+
+2. Perhatikan fungsi fetchCardData() (pada file src\model\query.tsx) dari soal nomor 1. Jelaskan maksud kode dan kueri yang dilakukan dalam fungsi tersebut!
+
+Kode dalam fungsi fetchCardData() biasanya terdiri dari proses berikut:
+
+- Membuat permintaan ke API atau database dengan menggunakan metode seperti fetch atau axios.
+- Mengirim kueri (query) yang berisi informasi terkait data yang ingin diambil, seperti ID kartu atau parameter pencarian lainnya.
+- Menangani respons dari sumber data, yang biasanya berupa objek JSON atau array data.
+- Memeriksa dan memanipulasi data sesuai kebutuhan aplikasi, seperti menyaring, mengurutkan, atau mengubah format data.
+- Mengembalikan data kartu yang sudah diolah agar dapat digunakan di komponen atau bagian lain dari aplikasi.
+
+![Screenshoot](assets-report/08.png)

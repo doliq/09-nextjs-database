@@ -55,11 +55,7 @@ export async function fetchLatestInvoices() {
 }
 
 export async function fetchCardData() {
-    noStore();
     try {
-        // You can probably combine these into a single SQL query
-        // However, we are intentionally splitting them to demonstrate
-        // how to initialize multiple queries in parallel with JS.
         const invoiceCountPromise = sql`SELECT COUNT(*) FROM invoices`;
         const customerCountPromise = sql`SELECT COUNT(*) FROM customers`;
         const invoiceStatusPromise = sql`SELECT
@@ -72,6 +68,8 @@ export async function fetchCardData() {
             customerCountPromise,
             invoiceStatusPromise,
         ]);
+
+        console.log(data);  // Add this line to debug data
 
         const numberOfInvoices = Number(data[0].rows[0].count ?? '0');
         const numberOfCustomers = Number(data[1].rows[0].count ?? '0');
@@ -89,6 +87,7 @@ export async function fetchCardData() {
         throw new Error('Failed to fetch card data.');
     }
 }
+
 
 const ITEMS_PER_PAGE = 6;
 export async function fetchFilteredInvoices(
