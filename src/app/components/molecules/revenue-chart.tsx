@@ -25,36 +25,36 @@ export default async function RevenueChart() {
                 Recent Revenue
             </h2>
             <div className="rounded-xl bg-gray-50 p-4">
-                <div className="mt-0 grid grid-cols-12 items-end gap-2 rounded-md bg-white p-4 sm:grid-cols-13 md:gap-4">
+                <div className="flex bg-white p-4">
                     {/* y-axis */}
-                    <div
-                        className="mb-6 hidden flex-col justify-between text-sm text-gray-400 sm:flex"
-                        style={{ height: `${chartHeight}px` }}
-                    >
+                    <div className="mr-4 flex flex-col justify-between text-sm text-gray-400" style={{ height: `${chartHeight}px` }}>
                         {yAxisLabels.map((label) => (
                             <p key={label}>{label}</p>
                         ))}
                     </div>
-
-                    {revenue.map((month) => (
-                        <div key={month.month} className="flex flex-col items-center gap-2">
-                            {/* bars */}
-                            <div
-                                className="w-full rounded-md bg-blue-300"
-                                style={{
-                                    height: `${(chartHeight / topLabel) * month.revenue}px`,
-                                }}
-                            ></div>
-                            {/* x-axis */}
-                            <p className="-rotate-90 text-sm text-gray-400 sm:rotate-0">
-                                {month.month}
-                            </p>
-                        </div>
-                    ))}
+                    <div className="flex-grow flex justify-between items-end w-full">
+                        {revenue.map((month) => (
+                            <div key={month.month} className="flex flex-col items-center gap-2" style={{ flex: `1 0 calc(100% / 12)` }}>
+                                {/* bars */}
+                                <div
+                                    className="w-full rounded-md bg-blue-300"
+                                    style={{
+                                        height: `${(chartHeight / topLabel) * month.revenue}px`,
+                                        width: 'calc(100% - 10px)',
+                                    }}
+                                ></div>
+                                {/* x-axis */}
+                                <p className="mt-2 text-sm text-gray-400">{month.month}</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-                <div className="flex items-center pb-2 pt-6">
-                    <CalendarIcon className="h-5 w-5 text-gray-500" />
-                    <h3 className="ml-2 text-sm text-gray-500 ">Last 12 months</h3>
+                <div className="flex items-center justify-between pb-2 pt-6">
+                    <div></div>
+                    <div className="flex items-center">
+                        <CalendarIcon className="h-5 w-5 text-gray-500" />
+                        <h3 className="ml-2 text-sm text-gray-500">Last 12 months</h3>
+                    </div>
                 </div>
             </div>
         </div>
